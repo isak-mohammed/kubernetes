@@ -8,7 +8,7 @@ https://docs.docker.com/docker-for-windows/install/
 
 # Choclatey Installation:
 
-##Open powershell as administrator and execute below command to install choclatey
+## Open powershell as administrator and execute below command to install choclatey
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
