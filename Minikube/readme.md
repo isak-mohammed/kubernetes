@@ -1,10 +1,11 @@
 # Dependencies to install minikube on windows machine
-1. Oracle VM Virtualbox
+1. Docker installed on windows machine
 2. Chocolatey
 
-# Oracle VM Virtualbox
-Download latest version of virtual box using below link and install it.
-https://www.virtualbox.org/wiki/Downloads
+# Docker desktop on windows 10
+Download and install latest version of docker using below link 
+https://docs.docker.com/docker-for-windows/install/
+
 # Choclatey Installation:
 
 ##Open powershell as administrator and execute below command to install choclatey
