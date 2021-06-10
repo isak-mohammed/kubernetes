@@ -23,7 +23,7 @@ yum install -y jq gzip nano tar git unzip wget bind-utils
 
 ## Configure Amazon CLI to get authenticated with aws
 
--> aws configure
+*aws configure*
 
 AWS Access Key ID: XXXXX
 
