@@ -1,7 +1,7 @@
 # EKS cluster setup using eksctl
 
 ## 'ekctl' is a CLI tool which automates the provisioning of EKS on AWS
-ekctl is a simple command line utility for creating and managing Kubernetes clusters on Amazon EKS. Using ekctl we will create several resources automatically that we have to create manually using the AWS Management Console. Behind the scenes it uses cloudformation, one stack for cluster itself (VPC, IAM roles, etc) and other stack for managed nodegroup.
+eksctl is a simple command line utility for creating and managing Kubernetes clusters on Amazon EKS. Using eksctl we will create several resources automatically that we have to create manually using the AWS Management Console. Behind the scenes it uses cloudformation, one stack for cluster itself (VPC, IAM roles, etc) and other stack for managed nodegroup.
 
 ## Pre-requisites
 * kubectl – A command line tool for working with Kubernetes clusters.
@@ -47,7 +47,7 @@ mv ./kubectl /usr/local/bin/kubectl
 
 aws ec2 create-key-pair --region eu-west-2 --key-name isak-eks-key
 
-## Run ekctl command
+## Run eksctl command
 
 eksctl create cluster \
   --name isak-eks-cluster \
