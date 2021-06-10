@@ -27,8 +27,8 @@ chmod +x terraform && mv terraform /usr/local/bin/
 terraform
 
 # plugins
-
 terraform init
+
 # plan and apply
 terraform plan
 terraform applyterr
