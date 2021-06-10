@@ -12,18 +12,25 @@ yum install -y jq gzip nano tar git unzip wget
 
 # Configure Amazon CLI to get authenticated with aws
 
-aws configure
+*aws configure*
+
 AWS Access Key ID: XXXXX
+
 AWS Secret Access Key: XXXXX
+
 Default region name: eu-west-2
+
 Default output format: json
 
 
 # Download and install terraform Terraform CLI
 
 curl -o /tmp/terraform.zip -LO https://releases.hashicorp.com/terraform/0.15.5/terraform_0.15.5_linux_amd64.zip
+
 unzip /tmp/terraform.zip
+
 chmod +x terraform && mv terraform /usr/local/bin/
+
 terraform
 
 # plugins
@@ -40,13 +47,10 @@ aws eks update-kubeconfig --name ISAK-EKS --region eu-west-2
 # Get kubectl
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
-chmod +x ./kubectl
-mv ./kubectl /usr/local/bin/kubectl
 
-kubectl get nodes
-kubectl get deploy
-kubectl get pods
-kubectl get svc
+chmod +x ./kubectl
+
+mv ./kubectl /usr/local/bin/kubectl
 
 
 # Clean up

@@ -12,10 +12,14 @@ yum install -y jq gzip nano tar git unzip wget
 
 # Configure Amazon CLI to get authenticated with aws
 
-aws configure
+*aws configure*
+
 AWS Access Key ID: XXXXX
+
 AWS Secret Access Key: XXXXX
+
 Default region name: eu-west-2
+
 Default output format: json
 
 
@@ -34,7 +38,8 @@ terraform plan
 terraform apply
 
 # Lets see the example deployment we deployed
-1st grab EKS config
+1st grab EKS config using cli
+
 aws eks update-kubeconfig --name isak-eks-xxxxx --region eu-west-2
 
 # Get kubectl
@@ -44,8 +49,11 @@ chmod +x ./kubectl
 mv ./kubectl /usr/local/bin/kubectl
 
 kubectl get nodes
+
 kubectl get deploy
+
 kubectl get pods
+
 kubectl get svc
 
 
