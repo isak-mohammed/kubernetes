@@ -35,7 +35,7 @@ terraform applyterr
 
 # Lets see the example deployment we deployed
 1st grab EKS config
-aws eks update-kubeconfig --name devops-catalog --region eu-west-2
+aws eks update-kubeconfig --name ISAK-EKS --region eu-west-2
 
 # Get kubectl
 
