@@ -18,15 +18,19 @@
 ## We will run docker conatiner of amazoncli
 docker run -it --rm -v ${PWD}:/work -w /work --entrypoint /bin/sh amazon/aws-cli:2.0.43
 
-## Then download some some handy tools 
+## Then download some handy tools 
 yum install -y jq gzip nano tar git unzip wget bind-utils
 
 ## Configure Amazon CLI to get authenticated with aws
 
-aws configure
+-> aws configure
+
 AWS Access Key ID: XXXXX
+
 AWS Secret Access Key: XXXXX
+
 Default region name: eu-west-2
+
 Default output format: json
 
 ## Download and install Kops
