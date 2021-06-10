@@ -58,4 +58,5 @@ terraform destroy
 
 # EKS platform and AMI versions
 https://docs.aws.amazon.com/eks/latest/userguide/platform-versions.html
+
 https://docs.aws.amazon.com/eks/latest/userguide/eks-linux-ami-versions.html
